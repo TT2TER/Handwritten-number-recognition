@@ -110,10 +110,10 @@ def train_lenet(model,train_loader,test_loader,criterion,optimizer,num_epochs = 
     model.load_state_dict(best_model_wts)
     train_process = pd.DataFrame(
         data={"epoch":range(num_epochs),
-              "train_loss_all":train_loss_all,
-              "test_loss_all":test_loss_all,
-              "train_acc_all":train_acc_all,
-              "test_acc_all":test_acc_all}
+            "train_loss_all":train_loss_all,
+            "test_loss_all":test_loss_all,
+            "train_acc_all":train_acc_all,
+            "test_acc_all":test_acc_all}
     )
     return model,train_process
 
